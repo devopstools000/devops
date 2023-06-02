@@ -1,0 +1,65 @@
+/* CREATE TABLE */
+CREATE TABLE server_details(
+Private_IP VARCHAR(100),
+Public_IP VARCHAR(100),
+Project_Name VARCHAR(100),
+Website_Name VARCHAR(100),
+Designed_By VARCHAR(100),
+Managed_By VARCHAR(100),
+CUC VARCHAR(100),
+VM VARCHAR(100),
+OS VARCHAR(100),
+Server_hardening VARCHAR(100),
+VA date,
+Antivirus_Name_ VARCHAR(100),
+SOC_Entry VARCHAR(100),
+Warnings VARCHAR(100),
+SSLStart_Date date,
+SSLEnd_Date date,
+AuditStart_Date date,
+AuditEnd_Date date,
+Backup_Policy VARCHAR(100),
+Bkp_Frequeny_ VARCHAR(100),
+Bkp_Retention VARCHAR(100),
+Bkp_Managed_by VARCHAR(100)
+);
+
+Alter table server_details
+ADD Primary key(Private_IP);
+
+
+
+
+/* CREATE TABLE */
+CREATE TABLE vc_details(
+VCID VARCHAR(10),
+Webroom_ID VARCHAR(20),
+Access_Code VARCHAR(10),
+VC_Date date,
+VC_Time time,
+Edited_By VARCHAR(100),
+IP
+Edited_On TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+Alter table vc_details
+ADD Primary key(VCID);
+
+
+/* CREATE TABLE */
+CREATE TABLE webcast_details(
+EventName VARCHAR(10),
+Dept
+Web_Date date,
+Web_Time time,
+duration
+Edited_By VARCHAR(100),
+Edited_On TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+Alter table webcast_details
+ADD Primary key(WebID);
+
+liveEvents_Details
+nodes
+
